@@ -58,7 +58,7 @@ public class Student
     
     public String setUsername() 
     {
-        this.username = this.name + Integer.toString(this.age);;
+        this.username = this.name + Integer.toString(this.age);
         return this.username;
     }
     

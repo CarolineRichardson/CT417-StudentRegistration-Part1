@@ -14,9 +14,9 @@ import org.joda.time.DateTime;
 //Course Name (CS & IT or ECE, etc), List of modules, Academic Start date and End dates
 public class CourseProgramme 
 {
-	    
+	
 	private String courseName;
-    private DateTime startDate;
+	private DateTime startDate;
     private DateTime endDate;
     private ArrayList<Module> modules;
 
@@ -26,7 +26,7 @@ public class CourseProgramme
         this.courseName = name;
         this.startDate = start;
         this.endDate = end;
-        modules = new ArrayList<Module>();
+        this.modules = new ArrayList<Module>();
         
     }
     
@@ -91,11 +91,12 @@ public class CourseProgramme
         	//module details
         	System.out.println(m.toString());
         	
+        	//students in the module
             ArrayList<Student> students = m.getStudents();
             
             for(Student s : students) 
             {
-            	//students in module
+            	//print students in module
             	System.out.println(s.toString());
             }
             

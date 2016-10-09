@@ -45,8 +45,6 @@ public class Module
         students.add(s);
     }
     
-    
-    
     public String getMoudleName() 
     {
         return moduleName;
@@ -57,13 +55,11 @@ public class Module
         return moduleID;
     }
     
-    
     public ArrayList<Student> getStudents() 
     {
         return students;
     }
 	
-    
     public String toString()
     {
         return moduleDetails = "Module: " + this.moduleName + "\n" + "ID: " + this.moduleID + "\n";
